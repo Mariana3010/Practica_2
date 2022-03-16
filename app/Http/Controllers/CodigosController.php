@@ -21,11 +21,7 @@ class CodigosController extends Controller
         return view('codigos_p', ['index'=>$codigos_post]);
     }
 
-    public function prueba()
-    {
-        $codigos = Catalago::all();
-        return view('pruebas', ['index'=>$codigos]);
-        }
+
 }
 
 

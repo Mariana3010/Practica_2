@@ -16,8 +16,6 @@ use App\Http\Controllers\CodigosController;
 Route::get('/', function () {
     return view('welcome');
 });
-Route::get('/hi', function () {
-    return view('codigos_p');
-});
 Route::get('/verCodigos',[CodigosController::class,'mostrarCodigos'])->name('mostrar.codigos');
+Route::post('/codigos_p',[CodigosController::class,'buscar'])->name('buscar.p');
 Route::view("login","codigos_p");
